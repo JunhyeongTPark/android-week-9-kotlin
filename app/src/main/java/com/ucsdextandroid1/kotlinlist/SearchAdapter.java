@@ -22,7 +22,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SongViewHolder> {
     @NonNull
     @Override
     public SongViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        SongViewHolder songViewHolder = SongViewHolder.inflate(parent);
+        SongViewHolder songViewHolder = SongViewHolder.Companion.inflate(parent);
         songViewHolder.setClickListener(item -> {
             if(onItemClickListener != null)
                 onItemClickListener.onItemClicked(item);
